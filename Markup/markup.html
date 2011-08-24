@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- Pragmatic HTML5 and CSS3 -->
+<html lang="en-US">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Markup Example</title>
+<!--[if lt IE 9]>
+<script type="text/javascript" >
+document.createElement("nav" );
+document.createElement("header" );
+document.createElement("footer" );
+document.createElement("section" );
+document.createElement("aside" );
+document.createElement("article" );
+</script>
+<![endif]-->
+<style>
+
+body{
+	width  : 960px;
+	margin : 15px auto;
+	background: #d7edfc;
+}
+
+#menu_section nav ul li {
+	padding: 5px;
+	margin: 0 20px 0 0;
+	display: inline;
+	background-color: #eeeeee;
+	border: 1px solid rgb(148, 148, 148);
+	border-radius: 5px; -webkit-border-radius:  5px; -moz-border-radius:  5px; -khtml-border-radius:  5px;
+	box-shadow: 1px 1px 5px rgba(0,0,0, 0.5); -webkit-box-shadow: 1px 1px 5px rgba(0,0,0, 0.5); -moz-box-shadow: 1px 1px 5px rgba(0,0,0, 0.5); -khtml-box-shadow: 1px 1px 5px rgba(0,0,0, 0.5);
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	text-align: center;
+}
+
+section#sidebar {
+	float: right;
+	width: 25%;
+	background: #a5cae4;
+}
+
+section#posts aside {
+	float: right;
+	width: 35%;
+	margin-left: 5%;
+	font-size: 20px;
+	line-height: 40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header id="menu_section">
+ <h1>Markup Example</h1> 
+	<nav> 
+	  <ul> 
+		<li><a href="#">About</a></li> 
+		<li><a href="#">Archives</a></li> 
+		<li><a href="#">Posts</a></li> 
+		<li><a href="#">Calendar</a></li> 
+	  </ul> 
+	</nav> 
+</header>
+
+<section id="posts">
+
+<article class="post">
+<header>
+<h2>blah blah blah?</h2>
+<p>Posted by Markup on
+<time datetime="2011-08-23T12:33">August 23rd, 2011 at 12:33PM</time>
+</p>
+</header>
+
+<p>
+When creating this cinemagraph as soon as I saw the lady shaking her head from 
+side to side I knew it had to be included, it just sums up the fact that this 
+shouldn't be happening. The world is moving as usual, but all the people have 
+frozen. It is wrong some how, but comical at the same time.
+
+<aside>
+<p>
+&quot;The world is moving as usual...&quot;
+</p>
+</aside>
+
+</p>
+
+<p>
+Then write another paragraph quoting &quot;no.&quot;
+</p>
+
+<footer>
+<p><a href="#"><i>1 Comments</i></a> ...</p>
+</footer>
+</article>
+
+<footer id="document_footer">
+	<p>&copy; 2011 Markup Example</p>
+</footer>
+
+</section>
+
+<section id="sidebar">
+<nav>
+<h3>Archives</h3>
+<ul>
+<li><a href="#">August 2011</a></li>
+<li><a href="#">July 2011</a></li>
+<li><a href="#">June 2011</a></li>
+<li><a href="#">May 2011</a></li>
+<li><a href="#">April 2011</a></li>
+<li><a href="#">March 2011</a></li>
+<li><a href="#">February 2011</a></li>
+<li><a href="#">January 2011</a></li>
+</ul>
+</nav>
+</section>
+
+<progress id="progressbar" max=100><span>30</span>%</progress>
+
+</body>
+
+</html>
